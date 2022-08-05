@@ -482,6 +482,15 @@ public class YoungchaBlocks{
             rotate = true;
         }};
 
+        monomialHangarPlus  = new ModularUnitAssembler("monomial-hangar-plus"){{
+            requirements(Category.units, with(Items.copper,100,Items.graphite,20, Items.metaglass,20));
+            size = 3;
+            health = 2600;
+            unitModuleWidth = 3;
+            unitModuleHeight = 4;
+            rotate = true;
+        }};
+        
         reinforcedPowerNode = new PowerNode("reinforced-power-node"){{
             requirements(Category.power, with(UnityItems.nickel, 70, Items.titanium, 20, UnityItems.cupronickel, 20));
             size = 2;
